@@ -4,34 +4,34 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How does the AI pitch copilot work?",
+    question: "How does the subscription work?",
     answer:
-      "Simply paste a prospect's website URL. Our AI analyzes their market position, generates comprehensive insights, creates a 90-day strategic plan, and builds a conversion-optimized pitch deck—all in minutes.",
+      "Sign up for a monthly subscription to get unlimited access to all short movies in our library. New content is added regularly, and you can watch as many movies as you want. You can cancel anytime with no commitment.",
   },
   {
-    question: "What makes this different from other pitch tools?",
+    question: "Do I need to sign up to watch movies?",
     answer:
-      "Influenxers AI is built specifically for performance agencies. It combines market intelligence, strategic planning, and pitch deck generation in one workflow, saving hours of research and preparation time.",
+      "Yes, you'll need to create an account and subscribe to access the short movies. We offer a 7-day free trial so you can explore our content before committing.",
   },
   {
-    question: "Can I customize the pitch decks?",
+    question: "Can I purchase books without a subscription?",
     answer:
-      "Yes, all pitch decks are fully customizable. You can edit messaging, add your agency branding, include case studies, and adjust recommendations to match your agency's approach.",
+      "Yes! You can purchase individual books to read without needing a subscription. However, subscribers get special member pricing on all books.",
   },
   {
-    question: "How accurate is the market analysis?",
+    question: "What types of books do you feature?",
     answer:
-      "Our AI uses real-time data and industry benchmarks to provide accurate market insights. The analysis includes competitor research, market trends, and growth opportunities specific to each prospect.",
+      "We focus on indie books and novels from talented independent authors. Each book is carefully selected for its cinematic potential and unique storytelling.",
   },
   {
-    question: "When will the Design Partner Program start?",
+    question: "How often is new content added?",
     answer:
-      "The Design Partner Program is launching soon. We're accepting applications now for the first 25 agencies. Selected partners will be notified and onboarded in the coming weeks.",
+      "We add new short movies and books to our library monthly. Subscribers get early access to new releases and exclusive behind-the-scenes content.",
   },
   {
-    question: "What happens after the 3-month Design Partner Program?",
+    question: "Can I cancel my subscription anytime?",
     answer:
-      "Design Partners will continue to receive lifetime pricing and early access to new features. You'll also have the option to transition to our standard Agency Pod plan at your special rate.",
+      "Absolutely! There's no commitment or long-term contract. You can cancel your subscription at any time, and you'll continue to have access until the end of your billing period.",
   },
 ];
 
@@ -39,26 +39,28 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-          Frequently asked questions
+    <section className="px-4 py-20 sm:px-6 lg:px-8 lg:py-28 bg-gradient-to-b from-purple-50/30 to-white">
+      <div className="mx-auto max-w-3xl">
+        <h2 className="text-4xl font-bold tracking-tight text-center sm:text-5xl">
+          <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </span>
         </h2>
-        <div className="mt-10 space-y-6">
+        <div className="mt-12 space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-900/5"
+              className="rounded-xl bg-white p-6 shadow-lg ring-1 ring-purple-100 hover:shadow-xl transition-shadow"
             >
               <button
                 className="flex w-full items-center justify-between text-left"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <h3 className="text-base font-semibold leading-7 text-gray-900">
+                <h3 className="text-lg font-semibold leading-7 text-gray-900 pr-4">
                   {faq.question}
                 </h3>
                 <svg
-                  className={`h-5 w-5 flex-none text-gray-500 transition-transform ${
+                  className={`h-6 w-6 flex-none text-purple-600 transition-transform ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
@@ -74,7 +76,7 @@ export default function FAQ() {
                 </svg>
               </button>
               {openIndex === index && (
-                <p className="mt-4 text-sm leading-6 text-gray-600">
+                <p className="mt-4 text-base leading-6 text-gray-600">
                   {faq.answer}
                 </p>
               )}

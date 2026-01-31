@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhatItDoes from "@/components/WhatItDoes";
-import BuiltForAgencies from "@/components/BuiltForAgencies";
-import DesignPartnerProgram from "@/components/DesignPartnerProgram";
 import Pricing from "@/components/Pricing";
+import SocialMedia from "@/components/SocialMedia";
 import FAQ from "@/components/FAQ";
-import ContactForm from "@/components/ContactForm";
+import SignUp from "@/components/SignUp";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,11 +13,11 @@ export default function Home() {
       <Header />
       <Hero />
       <WhatItDoes />
-      <BuiltForAgencies />
-      <DesignPartnerProgram />
       <Pricing />
+      <SocialMedia />
       <FAQ />
-      <ContactForm />
+      <SignUp />
+      <Footer />
     </main>
   );
 }

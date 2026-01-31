@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Influenxers AI - AI Pitch & Growth Copilot for Performance Agencies",
-  description: "Win more retainers with an AI pitch copilot. Built for performance agencies to increase pitches, win rates, and shared playbooks.",
+  title: "Lalita - Indie Books Transformed Into Short Movies",
+  description: "Discover indie books and novels brought to life as stunning short movies. Monthly subscription to access exclusive content. Also purchase books to read.",
 };
 
 export default function RootLayout({
