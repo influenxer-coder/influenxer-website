@@ -6,7 +6,7 @@ export default function Hero() {
       
       <div className="relative mx-auto max-w-5xl text-center">
         <div className="mb-6 inline-block rounded-full bg-gradient-to-r from-purple-200 via-pink-200 to-orange-200 px-4 py-1.5 text-sm font-semibold text-purple-900">
-          ✨ Stories Come to Life
+          ✨ Stories Come to Life ✨
         </div>
         <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
