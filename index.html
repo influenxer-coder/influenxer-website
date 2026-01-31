@@ -3,9 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Influenxers - Transform Your Indie Books Into Engaging Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Influenxers</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
+                    <li><a href="#authors">For Authors</a></li>
+                    <li><a href="#contact" class="btn-nav">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Transform Your Indie Books Into
+                    <span class="highlight">Engaging Short Stories</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Connect readers with your stories through beautiful video playlists. 
+                    Let previews spark curiosity and drive book sales.
+                </p>
+                <div class="hero-cta">
+                    <a href="#authors" class="btn btn-primary">Sign Up Your Book</a>
+                    <a href="#showcase" class="btn btn-secondary">See How It Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Books Converted</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Readers</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Conversion Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Influenxers?</h2>
+                <p class="section-subtitle">Beautiful storytelling meets modern technology</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3 class="feature-title">Video Playlists</h3>
+                    <p class="feature-description">
+                        Transform chapters into engaging short video stories that captivate readers and drive engagement.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Beautiful Design</h3>
+                    <p class="feature-description">
+                        Inspired by nature's beauty, our platform creates visually stunning previews that reflect your book's essence.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Drive Sales</h3>
+                    <p class="feature-description">
+                        Preview videos increase book discovery and conversion rates, helping indie authors reach more readers.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Easy Setup</h3>
+                    <p class="feature-description">
+                        Simple signup process. Upload your book, and we'll help you create compelling preview content.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3 class="feature-title">Organic Growth</h3>
+                    <p class="feature-description">
+                        Shareable video content helps your book spread naturally through social media and word of mouth.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <h3 class="feature-title">Author Support</h3>
+                    <p class="feature-description">
+                        Dedicated support to help you maximize your book's potential and connect with your audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See It In Action</h2>
+                <p class="section-subtitle">Discover how books come to life</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="book-preview-card">
+                    <div class="book-preview-image">
+                        <div class="play-button">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <path d="M25 20L40 30L25 40V20Z" fill="#FF6B9D"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-preview-info">
+                        <h3 class="book-title">The Midnight Garden</h3>
+                        <p class="book-author">by Sarah Johnson</p>
+                        <p class="book-description">A magical tale of discovery and wonder in an enchanted garden.</p>
+                        <a href="#" class="book-link">Watch Preview →</a>
+                    </div>
+                </div>
+                <div class="book-preview-card">
+                    <div class="book-preview-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="play-button">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <path d="M25 20L40 30L25 40V20Z" fill="#667eea"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-preview-info">
+                        <h3 class="book-title">Ocean Dreams</h3>
+                        <p class="book-author">by Michael Chen</p>
+                        <p class="book-description">An adventure beneath the waves where dreams become reality.</p>
+                        <a href="#" class="book-link">Watch Preview →</a>
+                    </div>
+                </div>
+                <div class="book-preview-card">
+                    <div class="book-preview-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="play-button">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="30" fill="rgba(255,255,255,0.9)"/>
+                                <path d="M25 20L40 30L25 40V20Z" fill="#f5576c"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="book-preview-info">
+                        <h3 class="book-title">Whispers of Autumn</h3>
+                        <p class="book-author">by Emma Williams</p>
+                        <p class="book-description">A heartwarming story of change and new beginnings.</p>
+                        <a href="#" class="book-link">Watch Preview →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author Signup Section -->
+    <section id="authors" class="authors">
+        <div class="container">
+            <div class="authors-content">
+                <div class="authors-text">
+                    <h2 class="section-title">Ready to Transform Your Book?</h2>
+                    <p class="section-subtitle">
+                        Join hundreds of indie authors who are reaching new readers through engaging video previews.
+                    </p>
+                    <ul class="benefits-list">
+                        <li>
+                            <span class="benefit-icon">✓</span>
+                            <span>Create beautiful video playlists from your book</span>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">✓</span>
+                            <span>Reach thousands of potential readers</span>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">✓</span>
+                            <span>Increase book sales with engaging previews</span>
+                        </li>
+                        <li>
+                            <span class="benefit-icon">✓</span>
+                            <span>Get dedicated support throughout the process</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="signup-form-container">
+                    <form id="authorSignupForm" class="signup-form">
+                        <h3 class="form-title">Sign Up Your Book</h3>
+                        <div class="form-group">
+                            <label for="authorName">Your Name</label>
+                            <input type="text" id="authorName" name="authorName" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookTitle">Book Title</label>
+                            <input type="text" id="bookTitle" name="bookTitle" required placeholder="Enter your book title">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookGenre">Genre</label>
+                            <select id="bookGenre" name="bookGenre" required>
+                                <option value="">Select a genre</option>
+                                <option value="fiction">Fiction</option>
+                                <option value="romance">Romance</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="mystery">Mystery</option>
+                                <option value="sci-fi">Science Fiction</option>
+                                <option value="non-fiction">Non-Fiction</option>
+                                <option value="self-help">Self-Help</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your book (optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="What makes your book special?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Your Book</button>
+                        <p class="form-note">We'll contact you within 24 hours to get started!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">📚</span>
+                        <span class="logo-text">Influenxers</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming indie books into engaging short story playlists that captivate readers and drive sales.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#showcase">Showcase</a></li>
+                        <li><a href="#authors">For Authors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@influenxers.com">hello@influenxers.com</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Influenxers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
