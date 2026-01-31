@@ -10,11 +10,11 @@ export default function Hero() {
         </div>
         <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
-            Indie Books
+            Stories Come Alive
           </span>
           <br />
           <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Become Movies
+            On Screen
           </span>
         </h1>
         <p className="mx-auto mt-8 max-w-3xl text-xl leading-8 text-gray-700 sm:text-2xl">
